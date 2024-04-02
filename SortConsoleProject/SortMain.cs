@@ -11,18 +11,28 @@ namespace SortConsoleProject
         static void Main(string[] args)
         {
             int[] intArray = { 4, 2, 7, 1, 9, 5 };
-            string[] stringArray = { "banana", "apple", "orange", "grape", "kiwi" };
 
-            Console.WriteLine("Sorted integer array:");
-            foreach (var item in intArray.OrderBy(x => x))
+            Console.WriteLine("Original integer array:");
+            PrintIntArray(intArray);
+
+            SortableArray.SortIntArray(intArray);
+
+            Console.WriteLine("\nSorted integer array:");
+            PrintIntArray(intArray);
+        }
+        static void PrintIntArray(int[] array)
+        {
+            foreach (var item in array)
             {
                 Console.Write(item + " ");
             }
-            Console.WriteLine("\nSorted string array:");
-            foreach (var item in stringArray.OrderBy(x => x))
-            {
-                Console.Write(item + " ");
-            }
+        }
+    }
+    public class SortableArray
+    {
+        public static void SortIntArray(int[] array)
+        {
+            Array.Sort(array);
         }
     }
 }
