@@ -12,6 +12,7 @@ namespace SortConsoleProject
         {
             int[] intArray = { 4, 2, 7, 1, 9, 5 };
 
+            //test
             Console.WriteLine("Original integer array:");
             PrintIntArray(intArray);
             SortableArray.SortIntArray(intArray);
