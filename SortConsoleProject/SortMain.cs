@@ -11,8 +11,17 @@ namespace SortConsoleProject
         static void Main(string[] args)
         {
             int[] intArray = { 4, 2, 7, 1, 9, 5 };
-            int[] intArrays = { 5, 2, 7, 1, 9, 5 };
-            int[] test = { 5, 2, 7, 1, 9, 5 };
+
+            //
+            ///
+            //
+            //
+            //                  TEST TEST TEST TEST
+            //
+            //
+            //
+            //
+            //
 
             Console.WriteLine("Original integer array:");
             PrintIntArray(intArray);
